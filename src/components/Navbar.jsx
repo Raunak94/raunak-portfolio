@@ -5,7 +5,7 @@ export default function Navbar() {
   return (
     <nav className="flex items-center justify-between py-6">
       <div className="flex flex-shrink-0 items-center">
-        <a href="/raunak-portfolio" aria-label="Home">
+        <a href="/" aria-label="Home">
           <img src={logo} alt="logo" className="mx-2 " width={50} height={33} />
         </a>
       </div>
