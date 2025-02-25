@@ -1,6 +1,10 @@
 {
   "name": "portfolionew",
+<<<<<<< HEAD
   "homepage": "https://raunakgaggar.com/",
+=======
+  "homepage": "https://raunakgaggar.com",
+>>>>>>> a4bcffb (update)
   "private": true,
   "version": "0.0.0",
   "type": "module",
