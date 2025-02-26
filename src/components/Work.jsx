@@ -29,12 +29,12 @@ export default function Work() {
               initial={{ opacity: 0, x: 100 }}
               transition={{ duration: 1 }}
             >
-              <h3 className="mb-2 font-semibold ">
-                {experience.role}{" "}
-                <span className="text-sm text-stone-500">
-                  {experience.company}
-                </span>
+              <h3 className="mb-2 font-semibold text-3xl">
+                {experience.company}
               </h3>
+
+              <h4 className="text-xl text-stone-100">{experience.role}</h4>
+
               <ul className="list-disc list-inside mt-3 space-y-2">
                 {experience.description.map((point, idx) => (
                   <li key={idx} className="mb-4 text-stone-400">
