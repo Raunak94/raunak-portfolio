@@ -17,11 +17,21 @@ export default function App() {
       </div>
       <div className="container mx-auto px-8">
         <Navbar />
-        <Hero />
-        <Technologies />
-        <Projects />
-        <Work />
-        <Contact />
+        <div id="hero" className="pt-20">
+          <Hero />
+        </div>
+        <div id="technologies" className="pt-5">
+          <Technologies />
+        </div>
+        <div id="projects" className="pt-5">
+          <Projects />
+        </div>
+        <div id="work" className="pt-5">
+          <Work />
+        </div>
+        <div id="contact" className="pt-5">
+          <Contact />
+        </div>
       </div>
     </div>
   );

@@ -35,7 +35,14 @@ export default function Work() {
                   {experience.company}
                 </span>
               </h3>
-              <p className="mb-4 text-stone-400">{experience.description}</p>
+              <ul className="list-disc list-inside mt-3 space-y-2">
+                {experience.description.map((point, idx) => (
+                  <li key={idx} className="mb-4 text-stone-400">
+                    {point}
+                  </li>
+                ))}
+              </ul>
+              <br />
             </motion.div>
           </div>
         ))}

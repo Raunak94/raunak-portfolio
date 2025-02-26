@@ -7,13 +7,25 @@ export const EXPERIENCES = [
     year: "2016 - Present",
     role: "Founder and Owner",
     company: "Computech Nagpur",
-    description: `Founded and managed a successful computer sales and service business, providing IT solutions for B2B and B2C clients. Offered software installation, remote desktop setup, and complete network solutions, including LAN cabling and infrastructure mapping. Conducted on-site inspections and troubleshooting for corporate clients, optimizing networking systems and server performance. Delivered technical support, resolving hardware/software issues, managing installations, and overseeing upgrades. Served key clients across finance, IT, education, transportation, healthcare, and retail sectors. `,
+    description: [
+      `Founded and managed a successful computer sales and service business,delivering IT solutions to both B2B and B2C clients`,
+      `Provided software installation, remote desktop configuration, and end-to-end network setup, including LAN cabling and infrastructure mapping`,
+      `Conducted on-site inspections and troubleshooting for corporate clients,optimizing networking systems and server performance.`,
+      `Delivered comprehensive technical support, resolving hardware and software issues, managing system installations, and overseeing upgrades.`,
+    ],
   },
   {
     year: "2020 - 2024",
     role: "Co-Founder and Technology Head",
     company: "Dreamplay Nagpur",
-    description: `Co-founded and managed a leading kids' entertainment center offering Virtual Reality experiences and a soft play area. Designed and built a custom VR infrastructure, including high-performance gaming PCs, VR headsets, and multiplayer networks. Managed and maintained the entire network ecosystem, ensuring optimal performance and troubleshooting efficiency. Led a team of 3-5 employees, overseeing daily operations, customer engagement, and workflow optimization. Assisted customers with VR equipment setup and safety guidelines while organizing promotional activities and special events to enhance the experience.igns and optimized frontend performance.`,
+    description: [
+      "Co-founded and managed a leading kids' entertainment center featuring Virtual Reality experiences and a soft play area",
+      "Designed and built a custom VR infrastructure, including high-performance gaming PCs, VR headsets, projector displays, and multiplayer gaming networks.",
+      "Managed and maintained the entire network ecosystem, including configuring routers, switches, VR headsets, and CPUs, while developing network maps for efficient troubleshooting and performance optimization",
+      "Led a team of 3-5 employees, overseeing daily operations, optimizing processes, and ensuring exceptional customer satisfaction",
+      "Assisted customers with VR equipment setup, game navigation, and safety guidelines for an immersive experience.",
+      "Led promotional activities, introduced new VR games, and organized special events to enhance customer engagement.",
+    ],
   },
 ];
 
@@ -44,7 +56,7 @@ export const PROJECTS = [
     image: project3,
     description:
       "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["HTML", "CSS", "React", "Bootstrap", "Reactjs"],
+    technologies: ["HTML", "CSS", "React", "Bootstrap", "Tailwind CSS"],
   },
 ];
 

@@ -1,25 +1,25 @@
 import { FaNodeJs } from "react-icons/fa";
 import { RiReactjsLine } from "react-icons/ri";
-import { SiMongodb } from "react-icons/si";
-import { SiPython } from "react-icons/si";
-import { SiFlutter } from "react-icons/si";
-import { SiHtml5 } from "react-icons/si";
-import { SiCss3 } from "react-icons/si";
-import { SiJavascript } from "react-icons/si";
-import { SiBootstrap } from "react-icons/si";
-import { SiTailwindcss } from "react-icons/si";
-
+import {
+  SiMongodb,
+  SiPython,
+  SiFlutter,
+  SiHtml5,
+  SiCss3,
+  SiJavascript,
+  SiBootstrap,
+  SiTailwindcss,
+} from "react-icons/si";
 import { motion } from "framer-motion";
 
-const iconVarients = (duration) => ({
-  initial: {
-    y: -10,
-  },
+// Function to create smooth bounce animation
+const iconVariants = (duration) => ({
+  initial: { y: -10 },
   animate: {
     y: [10, -10],
     transition: {
-      duration: duration,
-      ease: "linear",
+      duration,
+      ease: "easeInOut",
       repeat: Infinity,
       repeatType: "reverse",
     },
@@ -29,116 +29,93 @@ const iconVarients = (duration) => ({
 export default function Technologies() {
   return (
     <div className="pb-24">
+      {/* Section Heading */}
       <motion.h2
         whileInView={{ opacity: 1, y: 0 }}
-        initial={{ opacity: 0, y: -100 }}
-        transition={{ duration: 1.5 }}
+        initial={{ opacity: 0, y: -50 }}
+        transition={{ duration: 1 }}
         className="my-20 text-center text-4xl"
       >
         Technologies
       </motion.h2>
+
+      {/* Icons Container */}
       <motion.div
-        className="flex flex-wrap items-center justify-center gap-4"
+        className="flex flex-wrap items-center justify-center gap-8 px-4"
         whileInView={{ opacity: 1, x: 0 }}
-        initial={{ opacity: 0, x: -100 }}
-        transition={{ duration: 1.5 }}
+        initial={{ opacity: 0, x: -50 }}
+        transition={{ duration: 1.2 }}
       >
-        {/* html */}
-        <motion.div
-          initial="initial"
-          animate="animate"
-          variants={iconVarients(2.5)}
-        >
-          <SiHtml5 className="text-orange-700 text-7xl mx-5" title="HTML5" />
-        </motion.div>
-        {/* css */}
-        <motion.div
-          initial="initial"
-          animate="animate"
-          variants={iconVarients(2.5)}
-        >
-          <SiCss3 className="text-blue-600 text-7xl mx-5" title="CSS3" />
-        </motion.div>
-        {/* js */}
-        <motion.div
-          initial="initial"
-          animate="animate"
-          variants={iconVarients(2.5)}
-        >
-          <SiJavascript
-            className="text-yellow-500 text-7xl mx-5"
-            title="JavaScript"
-          />
-        </motion.div>
-        {/* btst */}
-        <motion.div
-          initial="initial"
-          animate="animate"
-          variants={iconVarients(2.5)}
-        >
-          <SiBootstrap
-            className="text-purple-600 text-7xl mx-5"
-            title="Bootstrap"
-          />
-        </motion.div>
-        {/* node */}
-        <motion.div
-          className="p-4"
-          initial="initial"
-          animate="animate"
-          variants={iconVarients(5)}
-        >
-          <FaNodeJs className="text-7xl text-green-500 mx-5" />
-        </motion.div>
-        {/* mongodb */}
-
-        <motion.div
-          className="p-4"
-          initial="initial"
-          animate="animate"
-          variants={iconVarients(3)}
-        >
-          <SiMongodb className="text-7xl" color="#47A248" />
-        </motion.div>
-        {/* React */}
-        <motion.div
-          initial="initial"
-          animate="animate"
-          variants={iconVarients(2.5)}
-        >
-          <RiReactjsLine className="text-7xl text-cyan-400 mx-5" />
-        </motion.div>
-
-        {/* tcss */}
-        <motion.div
-          initial="initial"
-          animate="animate"
-          variants={iconVarients(2.5)}
-        >
-          <SiTailwindcss
-            className="text-teal-500 text-7xl mx-5"
-            title="Tailwind CSS"
-          />
-        </motion.div>
-
-        {/* pyt */}
-        <motion.div
-          className="p-4"
-          initial="initial"
-          animate="animate"
-          variants={iconVarients(2)}
-        >
-          <SiPython className="text-yellow-500 text-7xl mx-5" />
-        </motion.div>
-        {/* flu */}
-        <motion.div
-          className="p-4"
-          initial="initial"
-          animate="animate"
-          variants={iconVarients(2.5)}
-        >
-          <SiFlutter className="text-blue-500 text-7xl mx-5" />
-        </motion.div>
+        {/* Technology Icons with Titles */}
+        {[
+          {
+            Icon: SiHtml5,
+            color: "text-orange-600",
+            title: "HTML5",
+            duration: 3,
+          },
+          { Icon: SiCss3, color: "text-blue-600", title: "CSS3", duration: 4 },
+          {
+            Icon: SiJavascript,
+            color: "text-yellow-500",
+            title: "JavaScript",
+            duration: 3.5,
+          },
+          {
+            Icon: SiBootstrap,
+            color: "text-purple-600",
+            title: "Bootstrap",
+            duration: 1,
+          },
+          {
+            Icon: FaNodeJs,
+            color: "text-green-500",
+            title: "Node.js",
+            duration: 5,
+          },
+          {
+            Icon: SiMongodb,
+            color: "text-green-600",
+            title: "MongoDB",
+            duration: 3,
+          },
+          {
+            Icon: RiReactjsLine,
+            color: "text-cyan-400",
+            title: "React.js",
+            duration: 2.5,
+          },
+          {
+            Icon: SiTailwindcss,
+            color: "text-teal-500",
+            title: "Tailwind CSS",
+            duration: 2.5,
+          },
+          {
+            Icon: SiPython,
+            color: "text-yellow-500",
+            title: "Python",
+            duration: 2,
+          },
+          {
+            Icon: SiFlutter,
+            color: "text-blue-500",
+            title: "Flutter",
+            duration: 2.5,
+          },
+        ].map(({ Icon, color, title, duration }, index) => (
+          <div key={index} className="flex flex-col items-center">
+            <motion.div
+              initial="initial"
+              animate="animate"
+              variants={iconVariants(duration)}
+              className="text-7xl hover:scale-110 transition-transform duration-300"
+            >
+              <Icon className={`${color}`} />
+            </motion.div>
+            <p className="m-2 text-lg font-medium">{title}</p>
+          </div>
+        ))}
       </motion.div>
     </div>
   );

@@ -29,7 +29,7 @@ export default function Contact() {
         >
           {CONTACT.phoneNo}
         </motion.p>
-        <a href="#" className="border-b">
+        <a href="mailto:raunakgaggar94@gmail.com" className="border-b">
           {CONTACT.email}
         </a>
       </div>
