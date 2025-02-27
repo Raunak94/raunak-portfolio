@@ -1,6 +1,6 @@
 import project1 from "../assets/projects/netflix.png";
 import project2 from "../assets/projects/lyrics2.png";
-import project3 from "../assets/projects/port.png";
+import project3 from "../assets/projects/RG.png";
 
 export const EXPERIENCES = [
   {

@@ -64,13 +64,13 @@ export default function Hero() {
               className="my-2 max-w-lg py-6 text-xl leading-relaxed tracking-tighter"
               variants={childvarients}
             >
-              I am a web developer passionate about building modern,
+              I am a software developer passionate about building modern,
               interactive, and scalable applications. Transitioning from a
               background in hardware networking, I specialize in creating web
               and mobile applications using React and Flutter. I also have
               experience working with UI/UX design and immersive technologies. I
-              am currently seeking opportunities in web and mobile development.
-              Check out my projects and let’s connect!
+              am currently seeking full-time opportunities in software
+              development. Check out my projects and let’s connect!
             </motion.p>
             <motion.a
               href="/resume.pdf"
