@@ -6,7 +6,7 @@ import {
   FaInstagram,
   FaLinkedin,
 } from "react-icons/fa";
-import logo from "../assets/RG.webp";
+import logo from "../assets/projects/RG.png";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
