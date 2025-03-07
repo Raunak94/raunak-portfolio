@@ -75,7 +75,7 @@ export default function Navbar() {
             <FaGithub />
           </a>
           <a
-            href="https://www.instagram.com/gaggarraunak/?hl=en"
+            href="https://www.instagram.com/codewithraunak/"
             target="_blank"
             rel="noopener noreferrer"
           >
